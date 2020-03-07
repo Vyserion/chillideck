@@ -1,0 +1,38 @@
+{
+  "name": "chillideck",
+  "version": "0.1.0",
+  "description": "A useful platform for growing chillies",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Vyserion/chillideck.git"
+  },
+  "author": "James Smith",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Vyserion/chillideck/issues"
+  },
+  "homepage": "https://github.com/Vyserion/chillideck#readme",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^2.22.0",
+    "@typescript-eslint/parser": "^2.22.0",
+    "eslint": "^6.8.0",
+    "eslint-cli": "^1.1.1",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-config-prettier": "^6.10.0",
+    "eslint-plugin-import": "^2.20.1",
+    "eslint-plugin-prettier": "^3.1.2",
+    "eslint-plugin-react": "^7.19.0",
+    "husky": "^4.2.3",
+    "lint-staged": "^10.0.8",
+    "prettier": "^1.19.1",
+    "typescript": "^3.8.3"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{ts,js}": "eslint --cache --fix"
+  }
+}
